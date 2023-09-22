@@ -76,12 +76,12 @@ class dgtat_layer(MessagePassing):
         P = positional_attn_layer(jaccard_index, jaccard_all, torch.zeros_like(Adj))
         
         edge_out = SQRT(relu(dot(self.propagate(edge_index, x=(x_l, x_r), size=size),torch.matmul(W_EW, edge_feature)))+torch.matmul(W_Eb, edge_feature,S)).view(edge_input.shape[0],edge_channels)
-        a_n = a*S + b*p + torch.matmul(W_A,edge_out)
+        a_n = a*S + b*P + torch.matmul(W_A,edge_out)
         
         Sp = dot(S,P)
         Sp = Sample_K_mask(Sp)
         
-        a_s = a*S + b*p + SQRT(relu(self.propagate(edge_index, x=(x_l, x_r), size=size)))
+        a_s = a*S + b*P + SQRT(relu(self.propagate(edge_index, x=(x_l, x_r), size=size)))
         a_all = a_n + a_s
         
         x_out = torch.matmul(a_all, x)
