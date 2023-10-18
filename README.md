@@ -13,5 +13,5 @@ The data processing and virtual node addition modules
 
 The triple-attention DGTAT layer and the DGTAT model
 
-We use Citeseer for the data processing and dataset example here. All the ablation experiments in our paper can be done by selectively adding different modules to the DGTAT model. Experimental details and reference results can be found our paper.
+We use Citeseer for the data processing and dataset example here. All the ablation experiments in our paper can be done by selectively adding different modules to the DGTAT model. Experimental details and reference results can be found our paper. We are constantly refining our code to make it run with one click.
 
