@@ -1,5 +1,5 @@
 ### Welcome to our code repository of paper DGTAT: DECOUPLED GRAPH TRIPLE ATTENTION NETWORKS 👋
-Our account was created specifically for ICLR2024 and strictly follows the double-blind rules. This code repository mainly provides all the modules of DGTAT, including:
+Our account was created specifically for UAI2024 and strictly follows the double-blind rules. This code repository mainly provides all the modules of DGTAT, including:
 
 The LapPE node positional encoding initialization module
 
